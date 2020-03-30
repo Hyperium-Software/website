@@ -60,13 +60,20 @@ function Nav() {
                 </AppBar>
 
                 <Switch>
+
+
+                    <Route path="/example" render={HomeFunc} />
+                    <Route path="/" render={ExampleFunc} />
+
+
                     <Route path="/">
-                        <HomeFunc />
+                         {<HomeFunc />}
                     </Route>
 
-                    <Route path="/example">
-                        <ExampleFunc />
+                    <Route path="/Example">
+                        {<ExampleFunc />}
                     </Route>
+
                 </Switch>
 
             </div>
@@ -77,10 +84,12 @@ function Nav() {
 }
 
 function HomeFunc() {
+    console.log("Home func")
     return <Home />;
 }
 
 function ExampleFunc() {
+    console.log("ExampleFunc")
     return <Example />;
 }
 
