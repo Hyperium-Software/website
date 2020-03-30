@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './images/logo.svg';
 import './app.css';
+import Nav from './main/Nav';
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+
+        <Nav />
+
         <a
           className="App-link"
           href="https://reactjs.org"
