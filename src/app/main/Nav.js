@@ -67,11 +67,11 @@ function Nav() {
 
 
                     <Route path="/">
-                         {<HomeFunc />}
+                         <HomeFunc />
                     </Route>
 
                     <Route path="/Example">
-                        {<ExampleFunc />}
+                        <ExampleFunc />
                     </Route>
 
                 </Switch>
